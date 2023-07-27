@@ -1,4 +1,7 @@
-
+.card {
+    background: linear-gradient(#1a47ff,#ff2b2b);
+    color: whitesmoke;
+}
 
 .btnCount1{
     background-color: #1a47ff;
