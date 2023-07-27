@@ -1,22 +1,24 @@
 import { useState } from 'react'
 import './App.css'
 
-    type ButtonProps = {
-        intNum: number
+    type CounterProps = {
+        intNum: number,
+        plusNum: number,
+        minusNum: number
     }
 
-    function Counter( {intNum}: ButtonProps ) {
+    function Counter({intNum, plusNum, minusNum}: CounterProps) {
         const [count, setCount] = useState(intNum)
         return (
             <>
                 <div className="card">
                     <h1>Counter: {count}</h1>
                     <button className={"btnCount1"}
-                            onClick={() => setCount(count + 1)}>+</button>
+                            onClick={() => setCount(count + plusNum)}>+</button>
                     <button className={"btnCount2"}
                             onClick={() => {
                                 if(count > 0) {
-                                    setCount(count - 1)
+                                    setCount(count - minusNum)
                                 }
                             }}>-</button>
                 </div>
@@ -30,9 +32,9 @@ import './App.css'
 
       return (
             <div>
-                <Counter intNum={0}></Counter>
-                <Counter intNum={7}></Counter>
-                <Counter intNum={13}></Counter>
+                <Counter intNum={10} plusNum={3} minusNum={5}></Counter>
+                <Counter intNum={7} plusNum={7} minusNum={8}></Counter>
+                <Counter intNum={13} plusNum={123} minusNum={101}></Counter>
             </div>
       )
     }
