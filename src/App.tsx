@@ -19,6 +19,8 @@ import './App.css'
                             onClick={() => {
                                 if((count - minusNum) >= 0) {
                                     setCount(count - minusNum)
+                                } else {
+                                    setCount(0)
                                 }
                             }}>-</button>
                 </div>
