@@ -8,6 +8,16 @@
     color: aliceblue;
     width: 75px;
     height: 35px;
+    border-radius: 50%;
+}
+
+.btnCount1:hover{
+    background-color: #ff2b2b;
+    box-shadow: 10px 10px 10px #ff9191;
+    color: aliceblue;
+    width: 75px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 .btnCount2{
@@ -15,4 +25,14 @@
     color: aliceblue;
     width: 75px;
     height: 35px;
+    border-radius: 50%;
+}
+
+.btnCount2:hover{
+    background-color: #1a47ff;
+    box-shadow: 10px 10px 10px #91b8ff;
+    color: aliceblue;
+    width: 75px;
+    height: 35px;
+    border-radius: 50%;
 }
