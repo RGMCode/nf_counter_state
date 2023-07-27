@@ -17,7 +17,7 @@ import './App.css'
                             onClick={() => setCount(count + plusNum)}>+</button>
                     <button className={"btnCount2"}
                             onClick={() => {
-                                if(count > 0) {
+                                if((count - minusNum) >= 0) {
                                     setCount(count - minusNum)
                                 }
                             }}>-</button>
@@ -33,7 +33,7 @@ import './App.css'
       return (
             <div>
                 <Counter intNum={10} plusNum={3} minusNum={5}></Counter>
-                <Counter intNum={7} plusNum={7} minusNum={8}></Counter>
+                <Counter intNum={70} plusNum={7} minusNum={8}></Counter>
                 <Counter intNum={13} plusNum={123} minusNum={101}></Counter>
             </div>
       )
